@@ -133,6 +133,7 @@ address {
   flex-direction: column;
   gap: 1.5rem;
   min-height: 80vh;
+  align-items: flex-start;
 }
 
 .hero-content {
@@ -158,8 +159,7 @@ address {
 
 .hero-image {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  position: relative;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -168,7 +168,16 @@ address {
   width: 100%;
   height: auto;
   object-fit: cover;
-  max-height: 500px;
+}
+
+.hero-cta {
+  position: relative;
+  margin-top: -4rem;
+  z-index: 2;
+  align-self: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 2rem;
+  border-radius: 4px;
 }
 
 .cta-link {
