@@ -143,13 +143,9 @@ address {
   font-family: var(--font-heading);
   font-size: clamp(3rem, 7vw, 7rem);
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1.15;
   letter-spacing: -0.04em;
   color: var(--dark);
-}
-
-.hero-title br {
-  display: none;
 }
 
 .hero-title .underline {
