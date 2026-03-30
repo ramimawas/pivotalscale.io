@@ -1,3 +1,15 @@
+// Scroll-triggered fade-in animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in-scroll').forEach(el => observer.observe(el));
+
 // Mobile menu toggle
 const menuBtn = document.querySelector('.mobile-menu-btn');
 const nav = document.querySelector('.nav');
