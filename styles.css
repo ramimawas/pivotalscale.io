@@ -6,15 +6,15 @@
 }
 
 :root {
-  --purple: #9b6cff;
+  --purple: #a665f6;
   --purple-light: #c4a0ff;
   --purple-bg: #b07aff;
-  --dark: #1a1a1a;
+  --dark: #000;
   --gray: #666;
-  --light-bg: #f7f6f4;
-  --white: #fff;
+  --light-bg: #fafaf9;
+  --white: #fafafa;
   --font-body: 'Inter', -apple-system, sans-serif;
-  --font-heading: 'Space Grotesk', -apple-system, sans-serif;
+  --font-heading: 'Outfit', -apple-system, sans-serif;
 }
 
 html {
@@ -64,11 +64,13 @@ address {
 }
 
 .logo {
-  font-family: var(--font-body);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--purple);
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 32px;
+  width: auto;
 }
 
 .nav {
@@ -88,18 +90,20 @@ address {
 }
 
 .nav-btn {
-  font-size: 0.85rem;
+  font-family: 'Inter Tight', var(--font-body);
+  font-size: 0.9rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 0.6rem 1.5rem;
-  border: 1.5px solid var(--dark);
-  border-radius: 100px;
+  border: 1px solid var(--purple);
+  border-radius: 300px;
+  color: var(--dark);
   transition: all 0.2s;
 }
 
 .nav-btn:hover {
-  background: var(--dark);
+  background: var(--purple);
   color: var(--white);
 }
 
@@ -137,10 +141,10 @@ address {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(3rem, 7vw, 6rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
   color: var(--dark);
 }
 
@@ -169,17 +173,15 @@ address {
 
 .cta-link {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--purple);
   padding: 0.8rem 0;
-  border-bottom: 2px solid var(--dark);
   transition: all 0.2s;
 }
 
 .cta-link:hover {
-  color: var(--purple);
-  border-color: var(--purple);
+  opacity: 0.7;
 }
 
 /* About */
@@ -190,7 +192,7 @@ address {
 .about-text {
   font-family: var(--font-heading);
   font-size: clamp(1.5rem, 3.5vw, 2.8rem);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.3;
   letter-spacing: -0.02em;
   max-width: 900px;
@@ -227,7 +229,7 @@ address {
 .approach-item h3 {
   font-family: var(--font-heading);
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1rem;
   letter-spacing: -0.01em;
 }
@@ -270,7 +272,7 @@ address {
   z-index: 1;
   font-family: var(--font-heading);
   font-size: clamp(1.3rem, 3vw, 2.2rem);
-  font-weight: 700;
+  font-weight: 400;
   color: var(--white);
   text-align: center;
   max-width: 800px;
@@ -403,7 +405,7 @@ address {
 .newsletter-title {
   font-family: var(--font-heading);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0.75rem;
 }
 
