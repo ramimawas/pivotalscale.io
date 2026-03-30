@@ -71,6 +71,8 @@ address {
 .logo-img {
   height: 70px;
   width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .nav {
