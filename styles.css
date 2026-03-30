@@ -69,7 +69,7 @@ address {
 }
 
 .logo-img {
-  height: 32px;
+  height: 70px;
   width: auto;
 }
 
@@ -128,10 +128,10 @@ address {
 /* Hero */
 .hero {
   background: var(--light-bg);
-  padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 4vw, 4rem);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   min-height: 80vh;
 }
 
@@ -143,16 +143,20 @@ address {
   font-family: var(--font-heading);
   font-size: clamp(3rem, 7vw, 7rem);
   font-weight: 400;
-  line-height: 0.85;
+  line-height: 1.05;
   letter-spacing: -0.04em;
   color: var(--dark);
+}
+
+.hero-title br {
+  display: none;
 }
 
 .hero-title .underline {
   display: inline;
   background-image: linear-gradient(var(--purple), var(--purple));
-  background-position: 0 88%;
-  background-size: 100% 0.1em;
+  background-position: 0 92%;
+  background-size: 100% 0.08em;
   background-repeat: no-repeat;
 }
 
